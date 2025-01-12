@@ -22,6 +22,9 @@ class BasicCalculator():
     def divide(self):
         divide = self.arguments[0]
         for i in self.arguments[1:]:
+            if i == 0:
+                return 'Cannot divide by zero'
+            
             divide /= i
         return divide
     
