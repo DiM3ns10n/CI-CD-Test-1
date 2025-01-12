@@ -1,11 +1,12 @@
 class BasicCalculator():
     def __init__(self, *args):
-        self.arguments = args
+        self.arguments = args[0]
     
     def __repr__(self):
         return f"BasicCalculator({self.arguments})"
 
     def add(self):
+        print(self.arguments)
         return sum(self.arguments)
     
     def subtract(self):
